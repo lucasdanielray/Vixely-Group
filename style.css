@@ -30,7 +30,7 @@
 
 .fav {
     width: auto;
-    height: 40px;
+    height: 35px;
 }
 
 html {
@@ -1125,8 +1125,68 @@ section {
     left: 100%;
 }
 
-/* Responsive Footer */
+/* Responsive Design */
 @media (max-width: 768px) {
+    /* Container width */
+    .container {
+        width: 90%;
+    }
+    
+    /* Header layout - centered logo */
+    .header {
+        padding: 0 20px;
+    }
+    
+    .nav-container {
+        padding: 0 15px;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    
+    .logo {
+        margin-right: 0;
+        position: static;
+    }
+    
+    .nav-toggle {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    /* Typography */
+    .hero-title {
+        font-size: 2.5rem;
+        line-height: 1.1;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+    
+    /* Buttons full-width */
+    .btn {
+        width: 100%;
+        padding: 16px 24px;
+    }
+    
+    .btn-primary {
+        width: 100%;
+    }
+    
+    .btn-outline {
+        width: 100%;
+    }
+    
+    /* Footer */
     .footer-content {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -1134,10 +1194,26 @@ section {
     
     .footer-brand {
         order: 1;
+        text-align: center;
+        margin-bottom: 40px;
     }
     
-    .footer-column:nth-child(2) {
+    .footer-logo {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .footer-description {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 300px;
+    }
+    
+    .footer-column {
         order: 2;
+        text-align: center;
     }
     
     .footer-column:nth-child(3) {
@@ -1152,6 +1228,11 @@ section {
         order: 5;
     }
     
+    .footer-nav {
+        text-align: center;
+    }
+    
+    /* Age verification buttons */
     .age-verification-content {
         padding: 2rem;
         margin: 1rem;
@@ -1163,8 +1244,10 @@ section {
     
     .age-verification-btn {
         width: 100%;
+        padding: 16px 24px;
     }
     
+    /* Premium Gallery */
     .premium-gallery-content {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -1187,6 +1270,7 @@ section {
     
     .gallery-content {
         padding: 0 20px;
+        text-align: center;
     }
     
     .gallery-title {
@@ -1195,6 +1279,11 @@ section {
     
     .gallery-subtitle {
         font-size: 1rem;
+    }
+    
+    .apply-now-btn {
+        width: 100%;
+        padding: 16px 24px;
     }
 }
 
